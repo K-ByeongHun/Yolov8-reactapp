@@ -41,3 +41,10 @@
   grid-template-columns: repeat(1,auto);
   grid-gap: 10px;
 }
+
+.cbackground{
+  background-image: url('/src/컴포넌트들/guide/image.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

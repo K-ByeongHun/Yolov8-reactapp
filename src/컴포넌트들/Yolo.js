@@ -24,7 +24,7 @@ const CameraCapture = () => {
     canvas.width = 640;
     canvas.height = 480;
 
-    // 비디오에서 캔버스로 이미지를 그립니다.
+    // 비디오에서 캔버스로 이미지를 그림.
     context.drawImage(videoRef.current, 0, 0, canvas.width, canvas.height);
     const image = canvas.toDataURL('image/jpeg'); // 이미지를 base64 형식으로 변환
     setImageSrc(image);

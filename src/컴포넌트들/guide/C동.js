@@ -52,31 +52,33 @@ function C동() {
 
   return (
     <>
-      <h1>C동에 오신것을 환영합니다.</h1>
-      <div className="containerC">
-        <div className="button-matrixC">
-          <button onClick={openGalaxyHall} className="C동버튼 btn-6 custon-btn"><span>갤럭시홀</span></button>
-          <button onClick={openStudyRoom} className="C동버튼 btn-6 custon-btn"><span>면학실</span></button>
+    <div className="cbackground">
+        <h1>C동에 오신것을 환영합니다.</h1>
+        <div className="containerC">
+          <div className="button-matrixC">
+            <button onClick={openGalaxyHall} className="C동버튼 btn-6 custon-btn"><span>갤럭시홀</span></button>
+            <button onClick={openStudyRoom} className="C동버튼 btn-6 custon-btn"><span>면학실</span></button>
+          </div>
         </div>
+        <Link to='/guide'>
+          <button className="GoBackButton">뒤로가기</button>
+        </Link>
+        
+        <DecoModal
+          isOpen={isGalaxyHallOpen}
+          onClose={closeGalaxyHall}
+          title="갤럭시홀"
+          content="갤럭시홀은 학생들이 모두 모여서 강연을 듣거나 교육을 받는 곳입니다."
+          imageSrc={image}
+        />
+        <DecoModal
+          isOpen={isStudyRoomOpen}
+          onClose={closeStudyRoom}
+          title="면학실"
+          content="면학실은 학생들이 조용히 공부할 수 있는 공간입니다."
+          imageSrc={면학실}
+        />
       </div>
-      <Link to='/guide'>
-        <button className="GoBackButton">뒤로가기</button>
-      </Link>
-      
-      <DecoModal
-        isOpen={isGalaxyHallOpen}
-        onClose={closeGalaxyHall}
-        title="갤럭시홀"
-        content="갤럭시홀은 학생들이 모두 모여서 강연을 듣거나 교육을 받는 곳입니다."
-        imageSrc={image}
-      />
-      <DecoModal
-        isOpen={isStudyRoomOpen}
-        onClose={closeStudyRoom}
-        title="면학실"
-        content="면학실은 학생들이 조용히 공부할 수 있는 공간입니다."
-        imageSrc={면학실}
-      />
     </>
   );
 }
