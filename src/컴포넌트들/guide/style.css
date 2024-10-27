@@ -1,0 +1,43 @@
+/*guide 화면 모든 css*/
+/*뒤로가기*/
+.GoBackButton{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.GoBackButton:hover{
+  background-color: #dddddddb;
+}
+
+/*N동*/
+
+.containerN{
+  height : 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.button-matrixN{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 10px;
+}
+
+/*C동*/
+.containerC{
+  height : 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.button-matrixC{
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+  grid-gap: 10px;
+}
